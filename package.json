@@ -1,0 +1,17 @@
+{
+  "name": "entidades",
+  "version": "1.0.0",
+  "description": "buscador deportivo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon App.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "moment": "^2.22.2"
+  }
+}
