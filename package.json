@@ -3,15 +3,26 @@
   "version": "1.0.0",
   "description": "buscador deportivo",
   "main": "index.js",
+  "engines": {
+    "node": "8.11.2",
+    "npm": "5.6.0"
+  },
   "scripts": {
-    "dev": "nodemon App.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "server": "nodemon App.js",
+    "visor": "npm run start --prefix visor",
+    "dev": "concurrently \"npm run server\" \"npm run visor\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.3.0",
-    "moment": "^2.22.2"
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.9",
+    "validator": "^10.6.0"
   }
 }
